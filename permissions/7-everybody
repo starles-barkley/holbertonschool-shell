@@ -1,2 +1,2 @@
 #!/bin/bash
-mod 755 hello
+mod 640 hello
