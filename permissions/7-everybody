@@ -1,2 +1,2 @@
 #!/bin/bash
-mod 111 hello
+mod u+x hello
