@@ -1,2 +1,2 @@
 #!/bin/bash
-t -name '.' | wc -l
+t -name '.' | wc
