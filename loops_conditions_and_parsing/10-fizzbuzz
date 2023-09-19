@@ -2,16 +2,13 @@
 #Create script that displays 1- 100 
 for i in {1..100}
 do
-    if [ $((i % 5)) -eq 0 -a $((i % 3)) -eq 0 ]
-    then
-	echo "FizzBuzz"
-    elif [ $((i % 5)) -eq 0 ]
-    then
-	echo "Buzz"
-    elif [ $((i % 3)) -eq 0 ]
-    then
-	echo "Fizz"
-    else
-	echo "$i"
-    fi
-done
+	    str=
+	        ((i % 3 == 0)) && str="Fizz"
+		    ((i % 5 == 0)) && str+="Buzz"
+		        if [ -z "$str" ]
+				    then
+					    	echo "$i"
+						    else
+							    	echo "$str"
+								    fi
+							    done
